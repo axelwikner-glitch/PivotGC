@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 140" width="640" height="140" role="img" aria-label="PivotGC">
+  <text x="0" y="104" style="font-family:&#39;IBM Plex Sans&#39;,sans-serif;font-weight:500;font-size:104px;letter-spacing:-0.055em;fill:#0E3B25">pivot</text>
+  <g transform="translate(282,44)">
+    <path d="M0 30 L40 30" stroke="#0E3B25" stroke-width="6"></path>
+    <path d="M30 16 L44 30 L30 44" fill="none" stroke="#0E3B25" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"></path>
+  </g>
+  <text x="344" y="104" style="font-family:&#39;IBM Plex Sans&#39;,sans-serif;font-weight:500;font-size:104px;letter-spacing:-0.055em;fill:#0E3B25">gc</text>
+</svg>

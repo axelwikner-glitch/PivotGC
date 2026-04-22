@@ -1,0 +1,129 @@
+/* PivotGC — Design Tokens · Direction 03 (Vector)
+ * v 0.1 · 04.22.26
+ *
+ * Consumption:
+ *   - Import this file once in your global stylesheet.
+ *   - Use `var(--pgc-*)` everywhere. Do not hardcode hexes in components.
+ *   - Signal Orange must cover < 5% of any view. Forest ≈ 70%, Bone ≈ 25%.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap');
+
+:root {
+  /* -------- Color · Core -------- */
+  --pgc-forest:        #0E3B25; /* primary · surface, heading */
+  --pgc-forest-deep:   #0A2A1A; /* deep surface */
+  --pgc-abyss:         #0E1A12; /* near-black depth */
+  --pgc-bone:          #E9E5D8; /* default ground */
+  --pgc-bone-warm:     #DDD7C4; /* alt ground */
+  --pgc-lichen:        #C6C0A9; /* quiet accent, dividers */
+  --pgc-signal:        #D2502A; /* accent · <5% of view */
+  --pgc-signal-soft:   #E47A4A; /* reversed-surface signal */
+
+  /* -------- Color · Semantic -------- */
+  --pgc-success:       #2E7A4A;
+  --pgc-warning:       #C78A2E;
+  --pgc-danger:        #A8321C;
+  --pgc-info:          #3C6A8A;
+
+  /* -------- Color · Aliases -------- */
+  --pgc-ink:           var(--pgc-forest);
+  --pgc-surface:       var(--pgc-bone);
+  --pgc-surface-alt:   var(--pgc-bone-warm);
+  --pgc-muted:         rgba(14, 59, 37, 0.60);
+  --pgc-rule:          rgba(14, 59, 37, 0.15);
+
+  /* -------- Typography -------- */
+  --pgc-font-sans:     'IBM Plex Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --pgc-font-mono:     'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --pgc-weight-light:  300;
+  --pgc-weight-regular:400;
+  --pgc-weight-medium: 500;
+  --pgc-weight-semi:   600;
+  --pgc-weight-bold:   700;
+
+  /* Type scale · 1.25 modular */
+  --pgc-text-xs:   12px;
+  --pgc-text-sm:   14px;
+  --pgc-text-base: 16px;
+  --pgc-text-md:   18px;
+  --pgc-text-lg:   22px;
+  --pgc-text-xl:   28px;
+  --pgc-text-2xl:  36px;
+  --pgc-text-3xl:  48px;
+  --pgc-text-4xl:  64px;
+  --pgc-text-5xl:  88px;
+  --pgc-text-6xl:  120px;
+
+  /* Line height */
+  --pgc-leading-tight:  0.95;
+  --pgc-leading-snug:   1.15;
+  --pgc-leading-normal: 1.55;
+  --pgc-leading-loose:  1.75;
+
+  /* Tracking */
+  --pgc-tracking-display: -0.055em;
+  --pgc-tracking-heading: -0.035em;
+  --pgc-tracking-body:    -0.005em;
+  --pgc-tracking-meta:    0.12em;
+
+  /* -------- Spacing · 4px base -------- */
+  --pgc-space-1:  4px;
+  --pgc-space-2:  8px;
+  --pgc-space-3:  12px;
+  --pgc-space-4:  16px;
+  --pgc-space-5:  20px;
+  --pgc-space-6:  24px;
+  --pgc-space-8:  32px;
+  --pgc-space-10: 40px;
+  --pgc-space-12: 48px;
+  --pgc-space-16: 64px;
+  --pgc-space-20: 80px;
+  --pgc-space-24: 96px;
+  --pgc-space-32: 128px;
+
+  /* -------- Radius -------- */
+  --pgc-radius-none: 0;           /* cards, buttons, tiles — default sharp */
+  --pgc-radius-sm:   2px;
+  --pgc-radius-md:   4px;
+  --pgc-radius-pill: 999px;       /* chips, tags */
+
+  /* -------- Elevation (used sparingly) -------- */
+  --pgc-shadow-1: 0 1px 0 rgba(14, 26, 18, 0.06);
+  --pgc-shadow-2: 0 2px 12px rgba(14, 26, 18, 0.06), 0 1px 0 rgba(14, 26, 18, 0.04);
+  --pgc-shadow-3: 0 12px 40px rgba(14, 26, 18, 0.12);
+
+  /* -------- Motion -------- */
+  --pgc-ease:       cubic-bezier(0.2, 0.7, 0.2, 1);
+  --pgc-duration-1: 120ms;
+  --pgc-duration-2: 200ms;
+  --pgc-duration-3: 320ms;
+
+  /* -------- Layout -------- */
+  --pgc-container-sm: 640px;
+  --pgc-container-md: 960px;
+  --pgc-container-lg: 1240px;
+  --pgc-container-xl: 1440px;
+  --pgc-grid-gutter:  24px;
+}
+
+/* -------- Base defaults -------- */
+html, body {
+  background: var(--pgc-surface);
+  color: var(--pgc-ink);
+  font-family: var(--pgc-font-sans);
+  font-size: var(--pgc-text-base);
+  line-height: var(--pgc-leading-normal);
+  letter-spacing: var(--pgc-tracking-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* -------- Utility classes (optional) -------- */
+.pgc-display { font-size: var(--pgc-text-5xl); font-weight: var(--pgc-weight-medium); line-height: var(--pgc-leading-tight); letter-spacing: var(--pgc-tracking-display); }
+.pgc-h1      { font-size: var(--pgc-text-4xl); font-weight: var(--pgc-weight-medium); line-height: var(--pgc-leading-snug); letter-spacing: var(--pgc-tracking-heading); }
+.pgc-h2      { font-size: var(--pgc-text-3xl); font-weight: var(--pgc-weight-medium); line-height: var(--pgc-leading-snug); letter-spacing: var(--pgc-tracking-heading); }
+.pgc-h3      { font-size: var(--pgc-text-xl);  font-weight: var(--pgc-weight-medium); line-height: var(--pgc-leading-snug); }
+.pgc-body    { font-size: var(--pgc-text-base); line-height: var(--pgc-leading-normal); }
+.pgc-meta    { font-family: var(--pgc-font-mono); font-size: var(--pgc-text-xs); letter-spacing: var(--pgc-tracking-meta); text-transform: uppercase; color: var(--pgc-muted); }
