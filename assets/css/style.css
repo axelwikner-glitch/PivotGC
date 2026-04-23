@@ -684,6 +684,101 @@ a.row:hover .arrow { transform: translateX(6px); color: var(--pgc-signal); }
   .footer-grid { grid-template-columns: 1fr; }
 }
 
+/* ---- Forms ---- */
+.form {
+  display: grid;
+  gap: 20px;
+  max-width: 680px;
+  margin-top: 32px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 560px) {
+  .form-row { grid-template-columns: 1fr; }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field label {
+  font-family: var(--pgc-font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--pgc-muted);
+}
+
+.field .req { color: var(--pgc-signal); margin-left: 4px; }
+
+.field input,
+.field select,
+.field textarea {
+  font-family: var(--pgc-font-sans);
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 12px 14px;
+  background: var(--pgc-bone);
+  color: var(--pgc-ink);
+  border: 1px solid var(--pgc-rule);
+  border-radius: var(--pgc-radius-none);
+  width: 100%;
+  transition: border-color var(--pgc-duration-2) var(--pgc-ease);
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.field input:hover,
+.field select:hover,
+.field textarea:hover { border-color: rgba(14, 59, 37, 0.35); }
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--pgc-forest);
+  box-shadow: inset 0 0 0 1px var(--pgc-forest);
+}
+
+.field textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.field select {
+  background-image: linear-gradient(45deg, transparent 50%, var(--pgc-forest) 50%), linear-gradient(135deg, var(--pgc-forest) 50%, transparent 50%);
+  background-position: calc(100% - 18px) 18px, calc(100% - 13px) 18px;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  padding-right: 36px;
+}
+
+.form .field-honey {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  visibility: hidden;
+}
+
+.form .submit { margin-top: 8px; display: flex; gap: 12px; align-items: center; }
+
+.form button.cta {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  font-family: var(--pgc-font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
 /* ---- Focus rings (accessibility) ---- */
 :focus-visible {
   outline: 2px solid var(--pgc-signal);
