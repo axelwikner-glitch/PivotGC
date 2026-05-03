@@ -1439,9 +1439,6 @@ Work email
 [contact.form.field.company.label]
 Company
 
-[contact.form.field.stage.label]
-Stage
-
 [contact.form.field.markets.label]
 Primary markets
 
@@ -1456,17 +1453,6 @@ What's on fire?
 
 [contact.form.field.fire.placeholder]
 One sentence is enough. Contract stack, expansion, a specific deal, a dispute, a funding round…
-
-### Stage select options (order matters)
-
-[contact.form.field.stage.options]
-- Pre-Seed / Seed
-- Series A
-- Series B
-- Series C
-- Series D+
-- Bootstrapped / Profitable
-- Other
 
 ### Timeline select options (order matters)
 
