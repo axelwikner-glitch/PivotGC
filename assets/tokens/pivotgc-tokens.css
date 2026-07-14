@@ -7,7 +7,9 @@
  *   - Signal Orange must cover < 5% of any view. Forest ≈ 70%, Bone ≈ 25%.
  */
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap');
+/* Fonts are loaded via <link rel="preconnect"> + <link rel="stylesheet"> in each
+ * page <head> instead of a CSS @import, so the font CSS downloads in parallel
+ * with this file rather than after it (render-blocking chain). */
 
 :root {
   /* -------- Color · Core -------- */

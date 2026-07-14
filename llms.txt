@@ -31,6 +31,7 @@ Key facts. Retainers range from approximately €3,000 per month for lighter eng
 ## Optional
 
 - [Insights](https://pivotgc.com/insights/): Articles on commercial legal strategy for European scale-ups — when to hire a GC, loaded cost of a European GC, managing legal across multiple jurisdictions, cutting external counsel spend.
+- [When should a European scale-up hire a General Counsel?](https://pivotgc.com/insights/when-to-hire-a-general-counsel/): Decision framework with thresholds (external legal spend, contract volume, headcount and jurisdictional spread, stage, regulatory surface), behavioural signals, a full-time vs fractional comparison, and the sequencing from pre-Series A to post-Series C.
 
 ## Who PivotGC is not for
 
