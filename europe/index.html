@@ -8,10 +8,17 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied'
+    });
     gtag('js', new Date());
 
     gtag('config', 'AW-18322813077');
   </script>
+  <script defer src="/assets/js/consent.js"></script>
   <title>European Legal Coverage | Cross-Border Fractional GC | PivotGC</title>
   <meta name="description" content="Fractional General Counsel coverage across the UK, Nordics, Netherlands, Switzerland, and Germany. One lawyer, one invoice, coordinated across Europe." />
   <link rel="canonical" href="https://pivotgc.com/europe/" />
@@ -211,7 +218,7 @@
     </div>
     <div class="footer-bottom">
       <div>© 2026 PivotGC · All rights reserved</div>
-      <div>Not a law firm — see <a href="/faq/">FAQ</a></div>
+      <div>Not a law firm — see <a href="/faq/">FAQ</a> · <a href="/cookies/">Cookies</a></div>
     </div>
   </div>
 </footer>
